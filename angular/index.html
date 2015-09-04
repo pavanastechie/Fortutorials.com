@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buy A Mobile</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	 <link href="css/index.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Select Your Smart Phone</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid" ng-app="MobileApp" ng-controller="MobileAppCtrl">
+	
+
+
+
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Select Your Mobile</a></li>
+          </ul>
+		  <h3>Top Brands</h3>
+          <ul class="nav nav-sidebar">
+            <li></li>
+            <li><a href="" ng-click="myFilter = {Brand: 'Samsung'}; eventCheck($event)">Samsung</a></li>
+            <li><a href="" ng-click="myFilter = {Brand: 'Nokia'}; eventCheck($event)">Nokia</a></li>
+            <li><a href="" ng-click="myFilter = {Brand: 'Sony'}; eventCheck($event)">Sony</a></li>
+            <li><a href="" ng-click="myFilter = {Brand: 'Micromax'}; eventCheck($event)">Micromax</a></li>
+			<li><a href="" ng-click="myFilter = null; eventCheck($event)">All</a></li>
+          </ul>
+		  <h3>Price</h3>
+		  
+		  <select id="select-box" class="form-control" ng-model="selection" ng-click=" eventCheck($event)" ng-change="chiliSpicy()" >
+		    <option id="default" selected >All</option>
+			<option>Rs. 2000 Below</option>
+			<option>Rs. 5001 - 10000</option>
+			<option>Rs. 10001 - 18000</option>
+			<option>Rs. 18001 - 25000</option>
+          </select>
+           
+          <!--<ul class="nav nav-sidebar">
+            <li><a href="">Rs. 2000 and Below</a></li>
+            <li><a href="">Rs. 2001 - Rs. 5000</a></li>
+            <li><a href="">Rs. 5001 - Rs. 10000</a></li>
+			<li><a href="">Rs. 10001 - Rs. 18000</a></li>
+			<li><a href="">Rs. 18001 - Rs. 25000</a></li>
+			  
+          </ul>-->
+		  <h3>Top OS</h3>
+          <ul class="nav nav-sidebar">
+            <li><a href="" ng-click="myFilter = {OS: 'Andriod'};  eventCheck($event)">Andriod</a></li>
+            <li><a href="" ng-click="myFilter = {OS: 'Windows'};  eventCheck($event)">Windows</a></li>
+			  
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">MOBILES</h1>
+		  <!--Mobiles List -->
+           <div class="col-xs-6 col-lg-4" ng-repeat="x in pname | filter:myFilter " >
+             
+              <ul >
+			   <h2>{{ x.Name}}</h2>
+			  <img src='{{x.Image}}' " height="40%" width="40%" style="text-align: left;" />
+			  <li>Brand:{{x.Brand}}</li>
+			  <li>Cost: {{x.Cost}}</li>
+			   <li>Operating System: {{x.OS}}</li>
+			  </ul>
+            </div>
+			
+			<!--<div class="col-xs-6 col-lg-4">
+              <h2>Heading</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-default" href="#" role="button">View details</a></p>
+            </div>-->
+			<!-- End of Mobiles List-->
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/MobileApp.js"></script>
+	<script src="js/MobileAppCtrl.js"></script>
+	
+  </body>
+</html>

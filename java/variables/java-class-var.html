@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="description" content="The class variables are declared within the class and outside of the methods, constructor, or blocks. They are declared with keyword static, this tells the compiler that........." />
+	<meta name="keywords" content="java variables, java variable, class variable, class variables in java" />
+	
+	<link rel="stylesheet" type="text/css" href="/style.css"  />
+
+	
+	<title>FORTUTORIALS.COM-java variables, java variable, class variable, class variables in java</title>
+<style type="text/css">
+#transbox
+{
+  width: 800px;
+  height: 470px;
+  margin: 30px 50px;
+  background-color:#FFFF99;
+  border: 0px solid black;
+  
+ 
+}
+#transbox p
+{
+  padding:10px 10px 10px 10px;
+  font-weight:bold;
+  color: #000000;
+}
+#output
+{
+ width: 600px;
+  height: 400px;
+  margin: 30px 50px;
+  background-color:#000000;
+  border: 0px solid black;
+
+}
+#output p
+{
+  padding:10px 10px 10px 10px;
+  font-weight:none;
+  color: #ffffff;
+}
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33699937-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body class="orange">
+<div id="wrap">
+
+	<div id="header1">
+		<div id="headerimage1"><a href="/index.html">
+			<img src="/images/logo2.jpg" width="1100" height="130" alt="FORTUTORIALS.COM-java variables, java variable, class variable, class variables in java" />  </a>
+		</div>
+</div>
+<div id="navigation-wrapper">
+	<div id="navigation-wrapper-2">
+	<div id="navigation">
+<ul class="tabbed">
+<li><a href="/index.html">HOME</a></li>
+<li><a href="/what-is-java.html">JAVA</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="sidebar">
+		<ul class="sidemenu">
+			<li><a href="#">JAVA VARIABLES</a></li>
+<ul>
+
+
+
+<li><a  href="/java/variables/java-variables.html"> INPUT TYPES</a></li>
+<li><a href="/java/variables/java-assignment stat.html"> ASSIGNMENT STATEMENT</a></li>
+<li><a href="/java/variables/java-command-line.html">COMMAND LINE ARG</a></li>
+<li><a href="/java/variables/java-read-stat.html">READ STATEMENT</a></li>
+<li><a href="/java/variables/java-variable-types.html">VARIABLE TYPES</a></li>
+<li><a href="/java/variables/java-local-var.html">LOCAL VARIABLES</a></li>
+<li><a href="/java/variables/java-instance-var.html">INSTANCE VARIABLES</a></li>
+<li><a class="active" href="/java/variables/java-class-var.html">CLASS VARIABLES</a></li>
+<li><a href="/java/variables/java-paramter-var.html">PARAMETRIC VARIABLES</a></li>
+<li><a href="/java/variables/java-constants.html">CONSTANTS</a></li>
+
+
+
+
+
+
+
+
+
+
+</ul></ul>
+
+		
+	</div>
+<div id="left">
+<h4><a href="/java/variables/java-instance-var.html">< PREVIOUS  PAGE</a></h4>
+</div>
+<div id="right">
+<h4><a href="/java/variables/java-paramter-var.html">NEXT PAGE ></a></h4>
+</div>
+	
+	<div id="content">
+
+<h2>Class Variables (static):</h2>
+<p>The class variables are declared within the class and outside of the methods, constructor, or blocks. They are declared with keyword static, this tells the compiler that there is exactly one copy of this variable in existence. Additionally the final keyword is added to make the variable constant value. </p>
+<p>Static int number=10;</p>
+<p>Static final int number=10; // final is added to the variable to make it constant value.</p> 
+<p>Final is declared in the variable declaration to make the variable constant throughout the class.</p>
+<h4>PROGRAM</h4>
+<div id="transbox">
+<p>
+public class yamaha{<br/>
+	 static final int gears= 6;// gear must be constant for same model bikes<br/>
+	
+	public static void main(String[] args){ <br/>
+		yamaha R1 = new yamaha();//R1 is yamaha model<br/>
+		System.out.println("No. of gears for first yamaha R1 : " + R1.gears); <br/>
+                yamaha anotherR1 = new yamaha();//Another R1 bike<br/>
+		System.out.println("No. of gears for second yamaha R1 : "  + anotherR1.gears); <br/>
+System.out.println("No. of gears for both the R1 should be same because they are same models so, we use class variables for fixed values."); <br/>
+
+		
+	}<br/>
+}<br/>
+</p>
+</div>
+<h4>OUTPUT</h4>
+<div id="output">
+<p>
+D:\fortutorials>javac yamaha.java<br/>
+D:\fortutorials>java yamaha<br/>
+No. of gears for first yamaha R1 : 6<br/>
+No. of gears for second yamaha R1 : 6<br/>
+No. of gears for both the R1 should be same because they are same models so, we
+use class variables for fixed values. <br/>
+D:\fortutorials><br/>
+</p>
+</div>
+<p>If we are trying to change the gear for the second model by mistake or voluntarily for second R1 bike it gives error.</p>
+<h4>PROGRAM</h4>
+<div id="transbox">
+<p>
+public class yamaha{<br/>
+	 static final int gears= 6;// gear must be constant for same model bikes<br/>
+	public static void main(String[] args){ <br/>
+		yamaha R1 = new yamaha();//R1 is yamaha model<br/>
+		System.out.println("No. of gears for first yamaha R1 : " + R1.gears); <br/>
+             yamaha anotherR1 = new yamaha();//Another R1 bike<br/>
+             gears=7; <br/>
+System.out.println("No. of gears for second yamaha R1 : "  + anotherR1.gears); <br/>
+}<br/>
+}<br/>
+</p>
+</div>
+<h4>OUTPUT</h4>
+<div id="output">
+<p>
+D:\fortutorials>javac yamaha.java<br/>
+yamaha.java:8: cannot assign a value to final variable gears<br/>
+                gears=7; <br/>
+                ^<br/>
+1 error<br/>
+D:\fortutorials><br/>
+</p>
+</div>
+<div id="left">
+<h4><a href="/java/variables/java-instance-var.html">< PREVIOUS  PAGE</a></h4>
+</div>
+<div id="right">
+<h4><a href="/java/variables/java-paramter-var.html">NEXT PAGE ></a></h4>
+
+</div>
+</div>
+</div>
+
+<div id="top">
+
+<div id="metamorph1">
+
+	<p>Copyright &copy; 2012 <a href="/index.html">FORTUTORIALS.COM</a><br />
+	<a >Template design</a> by <a href="/index.html">FOR TUTORIALS</a></p>
+	</div>
+</div>
+
+
+</div>
+</body>
+</html>

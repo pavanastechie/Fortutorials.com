@@ -1,0 +1,32 @@
+[
+    {
+        "Brand": "Samsung",
+        "Name": "Galaxy Y",
+        "Cost": "12779",
+        "OS": "Andriod"
+    },
+    {
+        "Brand": "Nokia",
+        "Name": "Nokia Lumia 520",
+        "Cost": "7700",
+        "OS": "Windows"
+    },
+    {
+        "Brand": "Micromax",
+        "Name": "Micromax Canvas 2",
+        "Cost": "9900",
+        "OS": "Andriod"
+    },
+    {
+        "Brand": "Samsung",
+        "Name": "Samsung Duos 2",
+        "Cost": "16800",
+        "OS": "Andriod"
+    },
+    {
+        "Brand": "Sony",
+        "Name": "Sony Xperia 204",
+        "Cost": "19000",
+        "OS": "Windows"
+    }
+]

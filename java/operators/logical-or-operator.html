@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+<link rel="icon" type="image/x-icon" href="/images/for.png" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="description" content="Logical OR is logical operator used to join two or more relations........ 
+" />
+	<meta name="keywords" content="logical OR operator in java" />
+	
+	<link rel="stylesheet" type="text/css" href="/style.css"  />
+
+	
+	<title>FORTUTORIALS.COM-logical OR operator in java</title>
+<style type="text/css">
+#transbox
+{
+  width: 1000px;
+  height: 500px;
+  margin: 30px 0px;
+  background-color:#FFFF99;
+  border: 0px solid black;
+}
+#transbox p
+{
+  padding:10px 10px 10px 10px;
+  font-weight:bold;
+  color: #000000;
+}
+#output
+{
+ width: 700px;
+  height: 400px;
+  margin: 30px 50px;
+  background-color:#000000;
+  border: 0px solid black;
+
+}
+#output p
+{
+  padding:10px 10px 10px 10px;
+  font-weight:none;
+  color: #ffffff;
+}
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33699937-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body class="orange">
+<div id="wrap">
+
+	<div id="header1">
+		<div id="headerimage1"><a href="/index.html">
+			<img src="/images/logo2.jpg" width="1100" height="130" alt="FORTUTORIALS.COM-logical OR operator in java" />  </a>
+		</div>
+</div>
+<div id="navigation-wrapper">
+	<div id="navigation-wrapper-2">
+	<div id="navigation">
+<ul class="tabbed">
+<li><a href="/index.html">HOME</a></li>
+<li><a href="/what-is-java.html">JAVA</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="sidebar">
+		<ul class="sidemenu">
+			<li><a href="#">JAVA OPERATORS</a></li>
+<ul>
+<li><a href="/java/operators/arithmetic-operators.html"> ARITHMETIC OPERATORS</a></li>
+<li><a href="/java/operators/relational-operators.html"> RELATIONAL OPERATORs</a></li>
+<li><a href="/java/operators/logical-operators.html">LOGICAL OPERATORS</a></li>
+<li><a href="/java/operators/logical-and-operator.html">LOGICAL AND OPERATOR</a></li>
+<li><a class="active" href="/java/operators/logical-or-operator.html">LOGICAL OR OPERATOR</a></li>
+<li><a href="/java/operators/logical-not-operator.html">LOGICAL NOT OPERATOR</a></li>
+<li><a href="/java/operators/assignment-operator.html">ASSIGNMENT OPERATOR</a></li>
+<li><a href="/java/operators/increment-operators.html">INCREMENT OPERATORS</a></li>
+<li><a href="/java/operators/pre-increment-operator.html">PRE INCREMENT</a></li>
+<li><a href="/java/operators/post-increment-operator.html">POST INCREMENT</a></li>
+<li><a href="/java/operators/decrement-operators.html">DECREMENT OPERATORS</a></li>
+<li><a href="/java/operators/conditional-operator.html">CONDITIONAL OPERATOR </a></li>
+<li><a href="/java/operators/bitwise-operators.html">BITWISE OPERATORS </a></li>
+</ul>
+</ul>
+
+
+
+</ul>
+</div>		
+<div id="left">
+<h4><a href="/java/operators/logical-and-operator.html">< PREVIOUS  PAGE</a></h4>
+</div>
+<div id="right">
+<h4><a href="/java/operators/logical-not-operator.html">NEXT PAGE ></a></h4>
+</div>
+	
+	<div id="content">
+<h2>LOGICAL OR (||)</h2>
+<p>Logical OR is logical operator used to join two or more relations, syntax of logical OR is ||. It checks the both relations, if one of the relation is true then condition is true. If all of them are false, then total condition is false.</p>
+<h4>Example</h4>
+<p>(a &gt b) || (b == c)</p>
+<p>(a &lt b) || (b == c) && (c &gt a)</p>
+<h4>Program</h4>
+<div id="transbox">
+<p>
+class logor{<br/>
+public static void main(String args[]) {<br/>
+   int a = 10;	<br/>
+   int b = 5; <br/>
+   int c = 10; <br/>	
+    System.out.println(" a is "+a); <br/>
+System.out.println(" b is "+b); <br/>
+System.out.println(" c is "+c); <br/>
+System.out.println(" Statement(a &gt b) is "+(a &gt b));//first relation<br/>
+System.out.println(" Statement(a == c) is "+(a == c));// second relation<br/>
+   System.out.println("Statement(a &gt b || a == c):a is greaterthan b or a is equal to c is " + (a&gt b || a==c) );// all relations are true<br/>
+System.out.println("Statement(a&gt b || a != c):a is greaterthan b or a is not equal to c is " + (a&gt b&&a!=c) );// second is false<br/>
+System.out.println("Statement(a &lt b  ||  a == c):a is less than b or a is equal to c is " + (a &lt b || a==c) ); // first is false<br/>
+System.out.println("Statement(a &gt b || a != c):a is less than b or a is not equal to c is " + (a &lt b || a != c) );// all are false <br/> 
+}<br/>
+}<br/>
+</p>
+</div>
+<h4>Output</h4>
+<div id="output">
+<p>
+D:\fortutorials>javac logand.java<br/>
+D:\fortutorials>java logand<br/>
+
+a is10<br/>
+ b is5<br/>
+ c is10<br/>
+ Statement(a > b) is true<br/>
+ Statement(a == c) is true<br/>
+Statement(a > b || a == c):a is greaterthan b or a is equal to c is true<br/>
+Statement(a > b || a != c):a is greaterthan b or a is not equal to c is true<br/>
+Statement(a < b || a == c):a is less than b or a is equal to c is true<br/>
+Statement(a < b || a != c):a is less than b or a is not equal to c is false<br/>
+D:\fortutorials><br/>
+</p>
+</div>
+<div id="left">
+<h4><a href="/java/operators/logical-and-operator.html">< PREVIOUS  PAGE</a></h4>
+</div>
+<div id="right">
+<h4><a href="/java/operators/logical-not-operator.html">NEXT PAGE ></a></h4>
+</div>
+</div>
+</div>
+
+<div id="top">
+
+<div id="metamorph1">
+
+	<p>Copyright &copy; 2012 <a href="/index.html">FORTUTORIALS.COM</a><br />
+	<a >Template design</a> by <a href="/index.html">FOR TUTORIALS</a></p>
+	</div>
+</div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+[
+    {
+        "Brand": "Samsung",
+        "Name": "Galaxy Y",
+        "Cost": "12779",
+        "OS": "Andriod",
+        "Image": "images/galaxyY.jpg"
+    },
+    {
+        "Brand": "Nokia",
+        "Name": "Nokia Lumia 520",
+        "Cost": "7700",
+        "OS": "Windows",
+        "Image": "images/lumia520.jpg"
+    },
+    {
+        "Brand": "Micromax",
+        "Name": "Micromax Canvas 2",
+        "Cost": "9900",
+        "OS": "Andriod",
+        "Image": "images/canvas2.jpg"
+    },
+    {
+        "Brand": "Samsung",
+        "Name": "Samsung Duos 2",
+        "Cost": "16800",
+        "OS": "Andriod",
+        "Image": "images/duos2.jpg"
+    },
+    {
+        "Brand": "Samsung",
+        "Name": "Samsung Metro",
+        "Cost": "9800",
+        "OS": "Andriod",
+        "Image": "images/metro.jpg"
+    },
+    {
+        "Brand": "Sony",
+        "Name": "Sony Xperia Z3",
+        "Cost": "19000",
+        "OS": "Andriod",
+        "Image": "images/xperiaz3.jpg"
+    }
+]

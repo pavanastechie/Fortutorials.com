@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="description" content="JAVA JSP SERVLETS DBMS JDBC ,java long,long in java,java long example, java long program" />
+	<meta name="keywords" content="java long,long in java,java long example, java long program" />
+	
+	<link rel="stylesheet" type="text/css" href="/style.css"  />
+
+	
+	<title>FORTUTORIALS.COM-java long,long in java,java long example, java long program</title>
+<style type="text/css">
+#transbox
+{
+  width: 600px;
+  height: 400px;
+  margin: 30px 50px;
+  background-color:#FFFF99;
+  border: 0px solid black;
+  
+ 
+}
+#transbox p
+{
+  padding:10px 10px 10px 10px;
+  font-weight:bold;
+  color: #000000;
+}
+#output
+{
+ width: 600px;
+  height: 400px;
+  margin: 30px 50px;
+  background-color:#000000;
+  border: 0px solid black;
+
+}
+#output p
+{
+  padding:10px 10px 10px 10px;
+  font-weight:none;
+  color: #ffffff;
+}
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33699937-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body class="orange">
+<div id="wrap">
+<div id="image">
+	<div id="header1">
+		<div id="headerimage1"><a href="/index.html">
+			<img src="/images/logo2.jpg" width="1100" height="130" alt="FORTUTORIALS.COM-java long,long in java,java long example, java long program" />  </a>
+		</div>
+	
+		
+			
+			
+		</div>
+	
+	
+
+
+
+	
+<div id="navigation-wrapper">
+	<div id="navigation-wrapper-2">
+		
+	
+			<div id="navigation">
+
+				<ul class="tabbed">
+					
+<li><a href="/index.html">HOME</a></li>
+<li><a href="/what-is-java.html">JAVA</a></li>
+
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+	<div id="sidebar">
+		<ul class="sidemenu">
+			<li><a href="#">DATA TYPES</a></li>
+<ul><li><a href="/java/datatypes/java-identifiers.html">IDENTIFIERS</a></li>
+<li><a href="/java/datatypes/java-data-types.html">DATA TYPES</a></li>
+<li><a href="/java/datatypes/java-byte.html">BYTE TYPE</a></li>
+<li><a  href="/java/datatypes/java-short.html">SHORT TYPE</a></li>
+<li><a href="/java/datatypes/java-int.html">INT TYPE</a></li>
+<li><a class="active" href="/java/datatypes/java-long.html">LONG TYPE</a></li>
+<li><a href="/java/datatypes/java-float.html">FLOAT TYPE</a></li>
+<li><a href="/java/datatypes/java-double.html">DOUBLE TYPE</a></li>
+<li><a href="/java/datatypes/java-char.html">CHAR TYPE</a></li>
+<li><a href="/java/datatypes/java-boolean.html">BOOLEAN TYPE</a></li>
+
+
+
+
+</ul></ul>
+
+		
+	</div>
+<div id="left">
+<h4><a href="/java/datatypes/java-int.html">< PREVIOUS  PAGE</a></h4>
+</div>
+<div id="right">
+<h4><a href="/java/datatypes/java-float.html">NEXT PAGE ></a></h4>
+</div>
+	
+	<div id="content">
+
+<h2>Long</h2>
+<p>It is an integer type, it stores only signed values they can be positive (or) negative. long accepts the value in ranges between -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.</p>
+<p> Size is 8 byte. To declare integers long by appending the letter L (or) l</p>
+<h4>Example:</h4>
+<p>1345L (or) 1345l </p>
+<p>Memory size of long ranges from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.</p>
+<p>When we declare long, compiler arranges -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807. spaces in memory for our identifier.</p>
+<table border="1" cellpadding="30">
+  <tr>
+    <th>TYPE</th>
+    <th>SIZE</th>
+<th>MINIMUM VALUE</th>
+<th>MAXIMUM VALUE</th>
+  </tr>
+  <tr>
+    <td>long</td>
+    <td>eight bytes</td>
+<td>-9,223,372,036,854,775,808 </td>
+<td>9,223,372,036,854,775,807</td>
+  </tr>
+</table>
+<h4>Program</h4>
+<div id="transbox">
+<p>
+public class Rock{<br/>
+public static void main(String[] args) <br/>
+{<br/>
+long max=9223372036854775807L; <br/>
+long min=-9223372036854775808l; <br/> 
+long num=9223372036854775800L; <br/>
+long num1=2147483647; //integer max value so no L(or)l<br/>
+long num2=2147483649L;// exceeds integer range so we have to use L(or)l<br/>
+
+System.out.println("MAXIMUM VALUE OF LONG DATA TYPE IS:" +max); <br/>
+System.out.println("MINIMUM VALUE OF LONG DATA TYPE IS:" +min); <br/>
+System.out.println("VALUE OF LONG DATA TYPE IS:" +num); <br/>
+System.out.println("VALUE OF LONG DATA TYPE IS:" +num1); <br/>
+System.out.println("VALUE OF LONG DATA TYPE IS:" +num2); <br/>
+}<br/>
+} <br/>
+</div>
+<h4>OUTPUT</h4>
+<div id="output">
+<p>
+Microsoft Windows [Version 6.1.7600] <br/>
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved. <br/>
+C:\Users\fortutorials>d: <br/>
+D:\>cd fortutorials<br/>
+D:\fortutorials>javac Rock.java<br/>
+D:\fortutorials>java Rock<br/>
+MAXIMUM VALUE OF LONG DATA TYPE IS:9223372036854775807<br/>
+MINIMUM VALUE OF LONG DATA TYPE IS:-9223372036854775808<br/>
+VALUE OF LONG DATA TYPE IS:9223372036854775800<br/>
+VALUE OF LONG DATA TYPE IS:2147483647<br/>
+VALUE OF LONG DATA TYPE IS:2147483649<br/>
+D:\fortutorials><br/>
+</p>
+</div>
+<p>In the above program we can see the maximum and minimum ranges of the long data type so that we can declare an value in between-9223372036854775808 to 9223372036854775807 but, extends with L(or)l to indicate it is long data type example:  9223372036854775567L we should not exceed                        -9223372036854775808 (or) 9223372036854775807.</p>
+<p>We can declare the integer range without using L(or)l , if we exceed integer range we have to use L(or)l.</p>
+
+<p>If we exceed the range of long data type it gives compiler error, see below program:</p>
+<div id="transbox">
+<p>
+public class Rocks{<br/>
+public static void main(String[] args) <br/>
+{<br/>
+long num=9223372036854775808L; <br/>
+System.out.println("VALUE OF long DATA TYPE IS:" +num); 
+}<br/>
+}<br/>
+</p>
+</div>
+<h4>OUTPUT</h4>
+<div id="output">
+<p>
+Microsoft Windows [Version 6.1.7600] <br/>
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved. <br/>
+C:\Users\fortutorials>d: <br/>
+D:\>cd fortutorials<br/>
+D:\fortutorials>javac Rocks.java<br/>
+Rocks.java:4: integer number too large: 9223372036854775808<br/>
+long num=9223372036854775808L; <br/>
+         ^<br/>
+1 error<br/>
+D:\fortutorials><br/>
+</p>
+</div>
+<p>We had given the value incrementing maximum value 9223372036854775807to 9223372036854775808, then it gives compiler error, integer number too large.</p>
+
+<div id="left">
+<h4><a href="/java/datatypes/java-int.html">< PREVIOUS PAGE</a></h4>
+</div>
+<div id="right">
+<h4><a href="/java/datatypes/java-float.html">NEXT PAGE ></a></h4>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="top">
+
+<div id="metamorph1">
+
+	<p>Copyright &copy; 2012 <a href="/index.html">FORTUTORIALS.COM</a><br />
+	<a >Template design</a> by <a href="/index.html">FOR TUTORIALS</a></p>
+	</div>
+</div>
+
+
+</div>
+</body>
+</html>
+

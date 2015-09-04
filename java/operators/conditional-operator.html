@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+<link rel="icon" type="image/x-icon" href="/images/for.png" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="description" content="Java includes special character pair ? : called ternary operator..........." />
+	<meta name="keywords" content="Conditional operator in java" />
+	
+	<link rel="stylesheet" type="text/css" href="/style.css"  />
+
+	
+	<title>FORTUTORIALS.COM-Conditional operator in java</title>
+<style type="text/css">
+#transbox
+{
+  width: 800px;
+  height: 400px;
+  margin: 30px 0px;
+  background-color:#FFFF99;
+  border: 0px solid black;
+}
+#transbox p
+{
+  padding:10px 10px 10px 10px;
+  font-weight:bold;
+  color: #000000;
+}
+#output
+{
+ width: 700px;
+  height:350px;
+  margin: 30px 50px;
+  background-color:#000000;
+  border: 0px solid black;
+
+}
+#output p
+{
+  padding:10px 10px 10px 10px;
+  font-weight:none;
+  color: #ffffff;
+}
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33699937-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body class="orange">
+<div id="wrap">
+
+	<div id="header1">
+		<div id="headerimage1"><a href="/index.html">
+			<img src="/images/logo2.jpg" width="1100" height="130" alt="FORTUTORIALS.COM-Conditional operator in java" />  </a>
+		</div>
+</div>
+<div id="navigation-wrapper">
+	<div id="navigation-wrapper-2">
+	<div id="navigation">
+<ul class="tabbed">
+<li><a href="/index.html">HOME</a></li>
+<li><a href="/what-is-java.html">JAVA</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="sidebar">
+		<ul class="sidemenu">
+			<li><a href="#">JAVA OPERATORS</a></li>
+<ul>
+<li><a href="/java/operators/arithmetic-operators.html"> ARITHMETIC OPERATORS</a></li>
+<li><a href="/java/operators/relational-operators.html"> RELATIONAL OPERATORs</a></li>
+<li><a href="/java/operators/logical-operators.html">LOGICAL OPERATORS</a></li>
+<li><a href="/java/operators/assignment-operator.html">ASSIGNMENT OPERATOR</a></li>
+<li><a href="/java/operators/increment-operators.html">INCREMENT OPERATORS</a></li>
+<li><a href="/java/operators/decrement-operators.html">DECREMENT OPERATORS</a></li>
+<li><a class="active" href="/java/operators/conditional-operator.html">CONDITIONAL OPERATOR </a></li>
+<li><a href="/java/operators/bitwise-operators.html">BITWISE OPERATORS </a></li>
+
+</ul>
+</ul>
+
+
+
+</ul>
+</div>		
+<div id="left">
+<h4><a href="/java/operators/post-decrement-operator.html">< PREVIOUS  PAGE</a></h4>
+</div>
+<div id="right">
+<h4><a href="/java/operators/bitwise-operators.html">NEXT PAGE ></a></h4>
+</div>
+	
+	<div id="content">
+<h2>CONDITIONAL OPERATOR</h2>
+<p>Java includes special character pair ? : called ternary operator. This operator is used to construct conditional expressions, this conditional operator is used as substitution of if - else statement.</p>
+<h4>Syntax</h4>
+            <p>expression1? expression2 : expression 3</p>
+<p>Compiler first execute expression1 if it is true, then it evaluate expression2 as the value of the conditional expression.</p>
+<p>Suppose expression1 is false, then it evaluate expression3 as the value of the conditional expression.</p>
+<h4>Example</h4>
+<p>b=8</p>
+<p>c=9</p>
+<p>x=(c>b) ? c : b</p>
+<p>expression1: c>b</p>
+<p>expression2: c</p>
+<p>expression3: b</p>
+<p>if expression1 c>b (9 > 8) is true </p>
+<p>return expression2 i.e. c(9) as output</p>
+<p>if expression 1 is false</p>
+<p>return expression3 i.e. b(8) as output</p>
+<h4>Program</h4>
+<div id="transbox">
+<p>
+class cond{<br/>
+public static void main(String[]args) <br/>
+{<br/>
+int a=2; <br/>
+int b=3; <br/>
+boolean c; <br/>
+int result; <br/>
+c= a < b; <br/>
+result=c ?a:b; <br/>
+System.out.println("the value of conditional operator c ? a : b is "+result); <br/>
+}<br/>
+}<br/>
+</p>
+</div>
+<h4>Output</h4>
+<div id="output">
+<p>
+D:\fortutorials>javac cond.java<br/>
+
+D:\fortutorials>java cond<br/>
+the value of conditional operator c ? a : b is 2<br/>
+
+D:\fortutorials><br/>
+</p> 
+</div>
+<div id="left">
+<h4><a href="/java/operators/post-decrement-operator.html">< PREVIOUS  PAGE</a></h4>
+</div>
+<div id="right">
+<h4><a href="/java/operators/bitwise-operators.html">NEXT PAGE ></a></h4>
+
+</div>
+</div>
+</div>
+
+<div id="top">
+
+<div id="metamorph1">
+
+	<p>Copyright &copy; 2012 <a href="/index.html">FORTUTORIALS.COM</a><br />
+	<a >Template design</a> by <a href="/index.html">FOR TUTORIALS</a></p>
+	</div>
+</div>
+
+
+</div>
+</body>
+</html>

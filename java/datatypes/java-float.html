@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="description" content="JAVA JSP SERVLETS DBMS JDBC ,java float,float in java,java float example, java float program" />
+	<meta name="keywords" content="java float,float in java,java float example, java float program" />
+	
+	<link rel="stylesheet" type="text/css" href="/style.css"  />
+
+	
+	<title>FORTUTORIALS.COM-java float,float in java,java float example, java float program</title>
+<style type="text/css">
+#transbox
+{
+  width: 700px;
+  height: 400px;
+  margin: 30px 50px;
+  background-color:#FFFF99;
+  border: 0px solid black;
+  
+ 
+}
+#transbox p
+{
+  padding:10px 10px 10px 10px;
+  font-weight:bold;
+  color: #000000;
+}
+#output
+{
+ width: 700px;
+  height: 400px;
+  margin: 30px 50px;
+  background-color:#000000;
+  border: 0px solid black;
+
+}
+#output p
+{
+  padding:10px 10px 10px 10px;
+  font-weight:none;
+  color: #ffffff;
+}
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33699937-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body class="orange">
+<div id="wrap">
+<div id="image">
+	<div id="header1">
+		<div id="headerimage1"><a href="/index.html">
+			<img src="/images/logo2.jpg" width="1100" height="130" alt="FORTUTORIALS.COM-java float,float in java,java float example, java float program" />  </a>
+		</div>
+	
+		
+			
+			
+		</div>
+	
+	
+
+
+
+	
+<div id="navigation-wrapper">
+	<div id="navigation-wrapper-2">
+		
+	
+			<div id="navigation">
+
+				<ul class="tabbed">
+					
+<li><a href="/index.html">HOME</a></li>
+<li><a href="/what-is-java.html">JAVA</a></li>
+
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+	<div id="sidebar">
+		<ul class="sidemenu">
+			<li><a href="#">DATA TYPES</a></li>
+<ul><li><a href="/java/datatypes/java-identifiers.html">IDENTIFIERS</a></li>
+<li><a href="/java/datatypes/java-data-types.html">DATA TYPES</a></li>
+<li><a href="/java/datatypes/java-byte.html">BYTE TYPE</a></li>
+<li><a  href="/java/datatypes/java-short.html">SHORT TYPE</a></li>
+<li><a href="/java/datatypes/java-int.html">INT TYPE</a></li>
+<li><a href="/java/datatypes/java-long.html">LONG TYPE</a></li>
+<li><a class="active" href="/java/datatypes/java-float.html">FLOAT TYPE</a></li>
+<li><a href="/java/datatypes/java-double.html">DOUBLE TYPE</a></li>
+<li><a href="/java/datatypes/java-char.html">CHAR TYPE</a></li>
+<li><a href="/java/datatypes/java-boolean.html">BOOLEAN TYPE</a></li>
+
+
+
+
+
+
+</ul></ul>
+
+		
+	</div>
+<div id="left">
+<h4><a href="/java/datatypes/java-long.html">< PREVIOUS  PAGE</a></h4>
+</div>
+<div id="right">
+<h4><a href="/java/datatypes/java-double.html">NEXT PAGE ></a></h4>
+</div>
+	
+	<div id="content">
+
+<h2>Float</h2>
+<p>It is a floating-point type, its size is 4bytes. float accepts the ranges between 1.40129846432481707e-45 to 3.40282346638528860e+38. </p>
+<p>It deals with fractional point in integer type we miss value after point using float we can get fractional part.</p>
+<p>Float is single-precision numbers while the double is double-precision number. Compiler treat Floating point numbers as double-precision. To force them to be in single-precision mode ,we must append F(or)f.</p>
+<h4>Example:</h4>
+<p>2.45968 is number we need to show by using 
+int 2.45968 we get only 2 it remove .45968.</p>
+<p>By declaring float 2.45968f we can show complete number.</p>
+<h4> PROGRAM</h4>
+<div id="transbox">
+<p>
+class fly {<br/>
+   public static void main(String[] args){ <br/>
+int a=8; <br/>
+int b=3; <br/>
+int c=a/b; <br/>
+float g=8f;// float value is always extended with F(or)f<br/>
+float h=3f; // float value is always extended with F(or)f<br/>
+float j=g/h; <br/>
+System.out.println("int number:"+c); <br/>
+System.out.println("float number:"+j); <br/>   
+} <br/>
+}<br/>
+</p>
+</div>
+<h4>OUTPUT</h4>
+<div id="output">
+<p>
+Microsoft Windows [Version 6.1.7600] <br/>
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved. <br/>
+C:\Users\fortutorials>d: <br/>
+D:\>cd fortutorials<br/>
+D:\fortutorials>javac fly.java<br/>
+D:\fortutorials>java fly<br/>
+int number:2<br/>
+float number:2.6666667<br/>
+D:\fortutorials><br/>
+</p>
+</div>
+<p>We can observe the difference between the float and int.</p>
+<p>Using int we can get only the whole number part as 2.</p>
+<p>Using float we can get whole number + fractional part as 2.6666667.</p>
+<table border="1" cellpadding="30">
+  <tr>
+    <th>TYPE</th>
+    <th>SIZE</th>
+<th>MINIMUM VALUE</th>
+<th>MAXIMUM VALUE</th>
+  </tr>
+  <tr>
+    <td>float</td>
+    <td>four bytes</td>
+<td>1.40129846432481707e-45 </td>
+<td>3.40282346638528860e+38</td>
+  </tr>
+</table>
+<h4>PROGRAM</h4>
+<div id="transbox">
+<p>
+public class fly1{<br/>
+public static void main(String[] args) <br/> 
+{<br/>
+float max=3.40282346638528860e+38f; <br/>
+float min=1.40129846432481707e-45f; <br/>
+System.out.println("MAXIMUM VALUE OF FLOAT DATA TYPE IS:" +max); <br/>
+System.out.println("MINIMUM VALUE OF FLOAT DATA TYPE IS:" +min);  <br/>
+}<br/>
+}<br/>
+</p>
+</div>
+<h4>OUTPUT:</h4>
+<div id="output">
+<p>
+Microsoft Windows [Version 6.1.7600] <br/>
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved. <br/>
+C:\Users\fortutorials>d: <br/>
+D:\>cd fortutorials<br/>
+D:\fortutorials>javac fly1.java<br/>
+D:\fortutorials>java fly1<br/>
+MAXIMUM VALUE OF FLOAT DATA TYPE IS:3.4028235E38<br/>
+MINIMUM VALUE OF FLOAT DATA TYPE IS:1.4E-45<br/>
+D:\fortutorials><br/>
+</p>
+</div>
+<p>Range of float is given as </p>
+<p>3.40282346638528860e+38 means we can represent 'e' as E(or)e.</p>
+<p>3.40282346638528860e+38 mean that 340282346638528860000000000000000000000.</p>
+<p>1.40129846432481707e-45  means that 0.00000000000000000000000000000000000000000000140129846432481707.</p>
+<h4>PROGRAM</h4>
+<div id="transbox">
+<p>
+public class fly1{<br/>
+public static void main(String[] args) <br/>
+{<br/>
+float max=340282346638528860000000000000000000000f; <br/>
+float min=0.00000000000000000000000000000000000000000000140129846432481707f; <br/>
+System.out.println("MAXIMUM VALUE OF FLOAT DATA TYPE IS:" +max); <br/>
+System.out.println("MINIMUM VALUE OF FLOAT DATA TYPE IS:" +min); <br/> 
+}<br/>
+}<br/>
+</p>
+</div>
+<h4>OUTPUT</h4>
+<div id="output">
+<p>
+Microsoft Windows [Version 6.1.7600] <br/>
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved. <br/>
+C:\Users\fortutorials>d: <br/>
+D:\>cd fortutorials<br/>
+D:\fortutorials>javac fly1.java<br/>
+D:\fortutorials>java fly1<br/>
+MAXIMUM VALUE OF FLOAT DATA TYPE IS:3.4028235E38<br/>
+MINIMUM VALUE OF FLOAT DATA TYPE IS:1.4E-45<br/>
+D:\fortutorials><br/>
+</p>
+</div>
+<p>If we exceed the range of float data type it gives compiler error, see below program:</p>
+<div id="transbox">
+<p>
+public class flys{<br/>
+public static void main(String[] args) <br/>
+{<br/>
+float max=34028234663852886000000000000000000000000f;//added one zero extra<br/>
+float min=3502823466385288600000000000000000000000f;//changed 34 to 35<br/>
+  
+System.out.println("MAXIMUM VALUE OF FLOAT DATA TYPE IS:" +max); <br/>
+System.out.println("MINIMUM VALUE OF FLOAT DATA TYPE IS:" +min);  <br/>
+}<br/>
+}<br/>
+</p>
+</div>
+<h4>OUTPUT</h4>
+<div id="output">
+<p>
+Microsoft Windows [Version 6.1.7600] <br/>
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved. <br/>
+C:\Users\fortutorials>d: <br/>
+D:\>cd fortutorials<br/>
+D:\fortutorials>javac flys.java<br/>
+flys.java:4: floating point number too large<br/>
+float max=34028234663852886000000000000000000000000f;//added one zero extra<br/>
+          ^<br/>
+flys.java:5: floating point number too large<br/>
+float min=3502823466385288600000000000000000000000f;//changed 34 to 35<br/>
+          ^<br/>
+2 errors<br/>
+D:\fortutorials><br/>
+</p>
+</div>
+<p>We added one zero in max and change 34 to 35 in min. Compiler gives an error as above.</p>
+
+
+
+
+<div id="left">
+<h4><a href="/java/datatypes/java-long.html">< PREVIOUS PAGE</a></h4>
+</div>
+<div id="right">
+<h4><a href="/java/datatypes/java-double.html">NEXT PAGE ></a></h4>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="top">
+
+<div id="metamorph1">
+
+	<p>Copyright &copy; 2012 <a href="/index.html">FORTUTORIALS.COM</a><br />
+	<a >Template design</a> by <a href="/index.html">FOR TUTORIALS</a></p>
+	</div>
+</div>
+
+
+</div>
+</body>
+</html>
